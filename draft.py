@@ -13,7 +13,17 @@ def extract_aadhaar_number (text):
 
 def mask_aadhaar_number (image,aadhaar_number):
   text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  fir i,word in enumerate (text_data{"text"})
+  ptint("Work" , work)
+  x,y,w,h= (
+    text_data["left"][i]
+    text_data["top"][i]
+    text_data["width"][i]
+    text_data["height"][i],
+  )
   
+img =cv2.rectangle(img, (x,y) , (x+w,y+h), (0,0,0), -1)
+return img
     
 
 

@@ -9,13 +9,14 @@ pytessearct.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesserac
 def extract_aadhaar_number (text):
   aadhaar_pattern =r"\b\d{4}[- ]?\d{4}[- ]?d{4}\b"
   match = re.search(aadhaar_pattern,text)
-  return match.group (0) if match else none
+  return match.group (0) if match else None
 
 def mask_aadhaar_number (image,aadhaar_number):
   text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data{"text"})
   if word in aadhar_no & len(word)==4:
-    x,y,w,h= (
+    x,y,w,h= 
+    (
       text_data["left"][i],
       text_data["top"][i],
       text_data["width"][i],
@@ -27,19 +28,20 @@ return img
 def extract_pan_number(text):
   pan_pattern= r \b[A-Z]{5}\d{4}[A-Z]\b"
   match= re.search(pan_pattern,text)
-  return match.group (0) if match else none 
+  return match.group (0) if match else None 
 
 def mask_pan_number (image,pan_number):
   text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data{"text"})
   if word ==pan_number:
-    x,y,w,h= (
+    x,y,w,h= 
+    (
       text_data["left"][i],
       text_data["top"][i],
       text_data["width"][i],
       text_data["height"][i],
     )
-    img =cv2.rectangle(img, (x,y) , (x+w,y+h), (0,0,0), -1)
+    img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
 return img
   
   

@@ -49,10 +49,10 @@ def extract_dob(text):
   match = re.search(dob_pattern,text) 
   return match. group (0) if match else None
 
-def mask_dob (image,dob):
+def mask_text (image,text_to_mask):
   text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
-  for i,word in enumerate (text_data{"text"})
-  if word ==pan_number:
+  for i, word in enumerate (text_data{"text"})
+  if text_to_mask in word:
     x,y,w,h= 
     (
       text_data["left"][i],
@@ -61,6 +61,7 @@ def mask_dob (image,dob):
       text_data["height"][i],
     )
     img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
+    break
 return img
    
   

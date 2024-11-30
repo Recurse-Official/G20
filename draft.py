@@ -214,7 +214,7 @@ if uploaded_file is not None:
         st.download_button(
             label="Download Masked Image",
             data=file,
-            file_name="masked_image.png",
+            file_name="masked_image.png", 
             mime="image/png",
         )
     st.success("Faces blurred and sensitive information masked successfully!")

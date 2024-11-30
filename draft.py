@@ -102,7 +102,20 @@ return img
     img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
 return img
 
+def extract_address(text):
+  lines= text.split('\n')
+  address_block=[]
+  address_started=False
+  for line in lines:
+    if "Address" in line or "पता" in line:
+     address_started=True
+      if address_started:
+      address_block.append(line.strip()) 
+        if len(address_block)>=4:
+          break
 
+address = " ".join(address_block).replace("Address","").replace("पता","").strip()
+  return address if address else None
 
 
 

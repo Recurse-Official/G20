@@ -116,7 +116,7 @@ def extract_address(text):
         if len(address_block)>=4:
           break
 
-address = " ".join(address_block).replace("Address","").replace("पता","").strip()
+  address = " ".join(address_block).replace("Address","").replace("पता","").strip()
   return address if address else None
 
 def mask_address (image,voter_id):

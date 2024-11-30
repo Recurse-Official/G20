@@ -21,7 +21,7 @@ def mask_aadhaar_number (image,aadhaar_number):
       text_data["width"][i],
       text_data["height"][i],
     )
-img =cv2.rectangle(img, (x,y) , (x+w,y+h), (0,0,0), -1)
+    img =cv2.rectangle(img, (x,y) , (x+w,y+h), (0,0,0), -1)
 return img
     
 

@@ -64,8 +64,25 @@ def mask_text (image,text_to_mask):
     break
 return img
    
-  
-  
+  def extract_driving_license(text):
+ driving_license_pattern = r "\b[A-Z]{2}[- ]?d{2}[- ]?\d{7,13}\b"
+  match = re.search(dob_pattern,text) 
+  return match. group (0) if match else None
+
+  def mask_driving_license (image,driving_license):
+  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  for i,word in enumerate (text_data{"text"})
+  if word ==driving_license:
+    x,y,w,h= 
+    (
+      text_data["left"][i],
+      text_data["top"][i],
+      text_data["width"][i],
+      text_data["height"][i],
+    )
+    img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
+return img
+
     
 
 

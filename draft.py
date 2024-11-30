@@ -6,6 +6,7 @@ from PIL import Image
 import streamlit as st
 
 pytessearct.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+"haarcasade_frontalface_default.xml")
 def extract_aadhaar_number (text):
   aadhaar_pattern =r "\b\d{4}[- ]?\d{4}[- ]?d{4}\b"
   match = re.search(aadhaar_pattern,text)
@@ -138,6 +139,16 @@ img=cv2.rectangle(coords[:, 0].min(), coords[:, 1].min()),
                         (coords[:, 2].max(), coords[:, 3].max()), (0, 0, 0), -1)
 return img
 
+def blur_faces(img):
+  
+  gray_img=cv2.cvtColor(img.cv2.COLOR_BR2GRAY)
+  faces=face_cascade.detectMultiScale(gray_img,scalefactor=1.1,minNeighbors=5,minSize=(30,30))
+  for (x,y,w,h) in faces:
+    face=img[y:y+h,x:x+w]
+    blurred_face=cv2.GausssianBlur(face,(51,51),30)
+    img[y:y+h,x:x+w]=blurred_face
+  return img
+ 
 
 
 

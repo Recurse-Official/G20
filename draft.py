@@ -134,7 +134,7 @@ def mask_address (image,voter_id):
    coords.append(x , y , x+w , y+h)
 if not coords:
   return img
-coords=np.array(coords)
+ coords=np.array(coords)
 img=cv2.rectangle(coords[:, 0].min(), coords[:, 1].min()),
                         (coords[:, 2].max(), coords[:, 3].max()), (0, 0, 0), -1)
 return img

@@ -22,6 +22,16 @@ st.markdown(
     align-items: center;
     padding: 0.5rem 1rem;
     }
+    .nav-buttons a {
+      text-decoration: none;
+      color: #1f2b2b;
+      background-color: #E5E5E5;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weigth: bold;
+      transition: background-color 0.3s,color 0.3s;
+      }
+      
   """
 pytesseract.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+ "haarcasade_frontalface_default.xml")

@@ -126,7 +126,7 @@ def mask_address (image,address):
         )
   coords.append(x , y , x+w , y+h)
   if not coords:
-    return img
+  return img
   coords=np.array(coords)
   img=cv2.rectangle(
     img,

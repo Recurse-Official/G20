@@ -8,7 +8,7 @@ import streamlit as st
 pytesseract.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+"haarcasade_frontalface_default.xml")
 def extract_aadhaar_number (text):
-  aadhaar_pattern =r"\b\d{4}[- ]?\d{4}[- ]?d{4}\b"
+  aadhaar_pattern =r"\b\d{4}[- ]?\d{4}[- ]?\d{4}\b"
   match = re.search(aadhaar_pattern,text)
   return match.group (0) if match else None
  
@@ -23,7 +23,7 @@ def extract_voter_id(text):
   return match. group (0) if match else None
 
 def extract_driving_license(text):
-  driving_license_pattern = r"\b[A-Z]{2}[- ]?d{2}[- ]?\d{7,13}\b"
+  driving_license_pattern = r"\b[A-Z]{2}[- ]?\d{2}[- ]?\d{7,13}\b"
   match = re.search(driving_license_pattern,text) 
   return match. group (0) if match else None
 

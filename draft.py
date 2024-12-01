@@ -66,7 +66,9 @@ elif nav == "about":
   st.title("About Us")
   st.title("Learn more about us on this page")
   st.title("Who are we?")
-  st.title("We ")
+  st.write("We are an enthusiastic team of learners and innovators, starting our journey to help individuals and businesses safeguard their sensitive information in the digital age. With a growing passion for data security,and privacy protection, we are committed to building simple, effective tools that make privacy management accessible to everyone. ")
+  st.write("Our Mission")
+  st.write("Our mission is to create effective and easy-to-use tools that help safeguard Personally Identifiable Information (PII). As beginners, we are dedicated to developing solutions for detecting, masking, and alerting users about sensitive information, making privacy protection simple, accessible, and reliable for everyone.")
   
 pytesseract.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 

@@ -55,21 +55,21 @@ st.markdown(
   """
 )
 st.title("PII shield")
-query_params = st.experimental_get_query_params()
-nav = query+params.get("nav" , ["home"])[0]
+# query_params = st.experimental_get_query_params()
+# nav = query+params.get("nav" , ["home"])[0]
 
-if nav == "home":
-  st.title("Home")
-  st.write("Welcome to the Home Page!")
-  st.write("Our solution for the PII shield involves a robust software application designed to scan and detect government issued PII in documents or data.Uses Regular expression (Regex) patterns to identify PII in Aadhaar cards, PAN, Driving Lincense, etc. Allows user to redact or mask PII to ensure privacy compliance.")
-elif nav == "about":
-  st.title("About Us")
-  st.title("Learn more about us on this page")
-  st.title("Who are we?")
-  st.write("We are an enthusiastic team of learners and innovators, starting our journey to help individuals and businesses safeguard their sensitive information in the digital age. With a growing passion for data security,and privacy protection, we are committed to building simple, effective tools that make privacy management accessible to everyone. ")
-  st.write("Our Mission")
-  st.write("Our mission is to create effective and easy-to-use tools that help safeguard Personally Identifiable Information (PII). As beginners, we are dedicated to developing solutions for detecting, masking, and alerting users about sensitive information, making privacy protection simple, accessible, and reliable for everyone.")
-  
+# if nav == "home":
+st.title("Home")
+st.write("Welcome to the Home Page!")
+st.write("Our solution for the PII shield involves a robust software application designed to scan and detect government issued PII in documents or data.Uses Regular expression (Regex) patterns to identify PII in Aadhaar cards, PAN, Driving Lincense, etc. Allows user to redact or mask PII to ensure privacy compliance.")
+# elif nav == "about":
+st.title("About Us")
+st.title("Learn more about us on this page")
+st.title("Who are we?")
+st.write("We are an enthusiastic team of learners and innovators, starting our journey to help individuals and businesses safeguard their sensitive information in the digital age. With a growing passion for data security,and privacy protection, we are committed to building simple, effective tools that make privacy management accessible to everyone. ")
+st.write("Our Mission")
+st.write("Our mission is to create effective and easy-to-use tools that help safeguard Personally Identifiable Information (PII). As beginners, we are dedicated to developing solutions for detecting, masking, and alerting users about sensitive information, making privacy protection simple, accessible, and reliable for everyone.")
+
 pytesseract.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+ "haarcasade_frontalface_default.xml")

@@ -141,7 +141,7 @@ def blur_faces(img):
   faces=face_cascade.detectMultiScale(gray_img,scalefactor=1.1,minNeighbors=5,minSize=(30,30))
   for (x,y,w,h) in faces:
     face=img[y:y+h,x:x+w]
-    blurred_face=cv2.GaussianBlur(face,(51,51),30)
+    blurred_face=cv2.GaussianBlur(face, (51,51), 30)
     img[y:y+h,x:x+w]=blurred_face
   return img
  

@@ -6,7 +6,7 @@ from PIL import Image
 import streamlit as st
 
 pytesseract.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+"haarcasade_frontalface_default.xml")
+face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+ "haarcasade_frontalface_default.xml")
 def extract_aadhaar_number (text):
   aadhaar_pattern =r"\b\d{4}[- ]?\d{4}[- ]?\d{4}\b"
   match = re.search(aadhaar_pattern,text)
@@ -18,19 +18,19 @@ def extract_pan_number(text):
   return match.group (0) if match else None 
 
 def extract_voter_id(text):
-  driving_license_pattern = r"\b[A-Z]{3}\b{7}\b"
+  driving_license_pattern = r"\b[A-Z]{3}\d{7}\b"
   match = re.search(driving_license_pattern,text) 
-  return match. group (0) if match else None
+  return match.group (0) if match else None
 
 def extract_driving_license(text):
   driving_license_pattern = r"\b[A-Z]{2}[- ]?\d{2}[- ]?\d{7,13}\b"
   match = re.search(driving_license_pattern,text) 
-  return match. group (0) if match else None
+  return match.group (0) if match else None
 
 def extract_dob(text):
   dob_pattern = r"\b\d{2}/\d{2}/\d{4}\b"
   match = re.search(dob_pattern,text) 
-  return match. group (0) if match else None
+  return match.group (0) if match else None
 
 def extract_address(text):
   lines= text.split('\n')
@@ -48,9 +48,9 @@ def extract_address(text):
   return address if address else None
     
 def mask_aadhaar_number (image,aadhaar_number):
-  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_date(img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data["text"]):
-    if word in aadhaar_number & len(word)==4:
+    if word in aadhaar_number and len(word)==4:
       x,y,w,h= (
         text_data["left"][i],
         text_data["top"][i],
@@ -61,7 +61,7 @@ def mask_aadhaar_number (image,aadhaar_number):
   return img
 
 def mask_pan_number (image,pan_number):
-  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_date(img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data["text"]):
     if word ==pan_number:
       x,y,w,h= (
@@ -74,7 +74,7 @@ def mask_pan_number (image,pan_number):
   return img
 
 def mask_voter_id (image,voter_id):
-  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_date(img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data["text"]):
     if word ==voter_id:
       x,y,w,h= (
@@ -87,7 +87,7 @@ def mask_voter_id (image,voter_id):
   return img
 
 def mask_driving_license (image,driving_license):
-  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_date(img, output_type =pytesseract.output.DICT)
   for i , word in enumerate (text_data["text"]):
     if word ==driving_license:
       x,y,w,h = (
@@ -100,7 +100,7 @@ def mask_driving_license (image,driving_license):
   return img
 
 def mask_text (image,text_to_mask):
-  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_date( img, output_type =pytesseract.output.DICT)
   for i, word in enumerate (text_data["text"]):
     if text_to_mask in word:
       x,y,w,h = (
@@ -113,8 +113,8 @@ def mask_text (image,text_to_mask):
       break
   return img
    
-def mask_address (image,voter_id):
-  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+def mask_address (image,address):
+  text_data = pytesseract.image_to_date(img, output_type =pytesseract.output.DICT)
   coords=[]
   for i , word in enumerate (text_data["text"]):
       if word.strip() in address and len(word.strip()) >1:
@@ -128,8 +128,13 @@ def mask_address (image,voter_id):
   if not coords:
     return img
   coords=np.array(coords)
-  img=cv2.rectangle(coords[:, 0].min(), coords[:, 1].min()),
-  (coords[:, 2].max(), coords[:, 3].max(), (0, 0, 0), -1)
+  img=cv2.rectangle(
+    img,
+    coords[:, 0].min(), coords[:, 1].min()),
+   (coords[:, 2].max(), coords[:, 3].max()),
+   (0, 0, 0),
+   -1
+           )
   return img
 
 def blur_faces(img):
@@ -138,7 +143,7 @@ def blur_faces(img):
   faces=face_cascade.detectMultiScale(gray_img,scalefactor=1.1,minNeighbors=5,minSize=(30,30))
   for (x,y,w,h) in faces:
     face=img[y:y+h,x:x+w]
-    blurred_face=cv2.GausssianBlur(face,(51,51),30)
+    blurred_face=cv2.GaussianBlur(face,(51,51),30)
     img[y:y+h,x:x+w]=blurred_face
   return img
  
@@ -191,7 +196,7 @@ if uploaded_file is not None:
     if address:
         st.success(f"Address: {address}")
         extracted_info["Address"] = address
-    extracted_info["BLur Faces"]="Yes"
+    extracted_info["BLur Faces"]= "Yes"
 
     if extracted_info:
         

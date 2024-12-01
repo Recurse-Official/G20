@@ -54,8 +54,20 @@ st.markdown(
         </header>
   """
 )
+st.title("PII shield")
+query_params = st.experimental_get_query_params()
+nav = query+params.get("nav" , ["home"])[0]
+
+if nav == "home":
+  st.title("Home")
+  st.write("Welcome to the Home Page!")
+  st.write("Our solution for the PII shield involves a robust software application designed to scan and detect government issued PII in documents or data.Uses Regular expression (Regex) patterns to identify PII in Aadhaar cards, PAN, Driving Lincense, etc. Allows user to redact or mask PII to ensure privacy compliance.")
+elif nav == "about":
+  
 pytesseract.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+ "haarcasade_frontalface_default.xml")
+
 def extract_aadhaar_number (text):
   aadhaar_pattern =r"\b\d{4}[- ]?\d{4}[- ]?\d{4}\b"
   match = re.search(aadhaar_pattern,text)
@@ -63,31 +75,32 @@ def extract_aadhaar_number (text):
  
 def extract_pan_number(text):
   pan_pattern= r"\b[A-Z]{5}\d{4}[A-Z]\b"
-  match= re.search(pan_pattern,text)
+  match= re.search(pan_pattern, text)
   return match.group (0) if match else None 
 
 def extract_voter_id(text):
   voter_id_pattern = r"\b[A-Z]{3}\d{7}\b"
-  match = re.search(voter_id_pattern,text) 
+  match = re.search(voter_id_pattern, text) 
   return match.group (0) if match else None
 
 def extract_driving_license(text):
-  driving_license_pattern = r"\b[A-Z]{2}[- ]?\d{2}[- ]?\d{7,13}\b"
-  match = re.search(driving_license_pattern,text) 
+  dl_pattern = r"\b[A-Z]{2}[- ]?\d{2}[- ]?\d{7,13}\b"
+  match = re.search(dl_pattern, text) 
   return match.group (0) if match else None
 
 def extract_dob(text):
   dob_pattern = r"\b\d{2}/\d{2}/\d{4}\b"
-  match = re.search(dob_pattern,text) 
+  match = re.search(dob_pattern, text) 
   return match.group (0) if match else None
 
 def extract_address(text):
-  lines= text.split('\n')
+  lines = text.split('\n')
   address_block=[]
-  address_started=False
+  address_started = False
+  
   for line in lines:
     if "Address" in line or "पता" in line:
-      address_started=True
+      address_started = True
       if address_started:
         address_block.append(line.strip()) 
         if len(address_block) >=4:

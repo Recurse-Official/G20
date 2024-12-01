@@ -196,7 +196,7 @@ if uploaded_file is not None:
     if address:
         st.success(f"Address: {address}")
         extracted_info["Address"] = address
-    extracted_info["BLur Faces"]= "Yes"
+    extracted_info["Blur Faces"]= "Yes"
 
     if extracted_info:
         

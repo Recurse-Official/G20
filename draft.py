@@ -24,10 +24,12 @@ st.markdown(
       align-items: center;
       padding: 0.5rem 1rem;
     }
+    
     .nav-buttons {
       display: flex;
       gap: 1rem;
      } 
+     
     .nav-buttons a {
         text-decoration: none;
         color: #1f2b2b;
@@ -37,10 +39,12 @@ st.markdown(
         font-weigth: bold;
         transition: background-color 0.3s,color 0.3s;
       }
+      
       .nav-buttons a:hover {
           background-color: #1f2b2b;
           color: #e5E5E5;
         }
+        
        </style>
        <header data-testid="stHeader">
          <div class="nav-buttons">
@@ -93,7 +97,7 @@ def extract_address(text):
   return address if address else None
     
 def mask_aadhaar_number (image,aadhaar_number):
-  text_data = pytesseract.image_to_date(img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_data(image, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data["text"]):
     if word in aadhaar_number and len(word)==4:
       x,y,w,h= (
@@ -102,11 +106,11 @@ def mask_aadhaar_number (image,aadhaar_number):
         text_data["width"][i],
         text_data["height"][i],
       )
-    img =cv2.rectangle(img, (x,y) , (x+w,y+h), (0,0,0), -1)
+    img =cv2.rectangle(img, (x, y) , (x + w, y + h ), (0, 0, 0), -1)
   return img
 
 def mask_pan_number (image,pan_number):
-  text_data = pytesseract.image_to_date(img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_data(img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data["text"]):
     if word ==pan_number:
       x,y,w,h= (
@@ -115,11 +119,11 @@ def mask_pan_number (image,pan_number):
         text_data["width"][i],
         text_data["height"][i],
       )
-    img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
+    img =cv2.rectangle(img , (x, y) , (x + w, y + h) , (0, 0, 0) , -1)
   return img
 
 def mask_voter_id (image,voter_id):
-  text_data = pytesseract.image_to_date(img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_data(img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data["text"]):
     if word ==voter_id:
       x,y,w,h= (
@@ -132,7 +136,7 @@ def mask_voter_id (image,voter_id):
   return img
 
 def mask_driving_license (image,driving_license):
-  text_data = pytesseract.image_to_date(img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_data(img, output_type =pytesseract.output.DICT)
   for i , word in enumerate (text_data["text"]):
     if word ==driving_license:
       x,y,w,h = (
@@ -145,7 +149,7 @@ def mask_driving_license (image,driving_license):
   return img
 
 def mask_text (image,text_to_mask):
-  text_data = pytesseract.image_to_date( img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_data( img, output_type =pytesseract.output.DICT)
   for i, word in enumerate (text_data["text"]):
     if text_to_mask in word:
       x,y,w,h = (
@@ -159,7 +163,7 @@ def mask_text (image,text_to_mask):
   return img
    
 def mask_address (image,address):
-  text_data = pytesseract.image_to_date(img, output_type =pytesseract.output.DICT)
+  text_data = pytesseract.image_to_data(img, output_type =pytesseract.output.DICT)
   coords=[]
   for i , word in enumerate (text_data["text"]):
       if word.strip() in address and len(word.strip()) >1:
@@ -178,7 +182,7 @@ def mask_address (image,address):
   return img
 
 def blur_faces(img):
-  gray_img=cv2.cvtColor(img.cv2.COLOR_BR2GRAY)
+  gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
   faces=face_cascade.detectMultiScale(gray_img,scalefactor=1.1,minNeighbors=5,minSize=(30,30))
   for (x,y,w,h) in faces:
     face=img[y:y+h,x:x+w]
@@ -186,13 +190,8 @@ def blur_faces(img):
     img[y:y+h,x:x+w]=blurred_face
   return img
  
-
-
-
-
 st.title("Document Details Extractor & Masker")
 st.write("Upload an image to extract Aadhaar, PAN, Voter ID, Driving License numbers, DOB details, and automatically mask them along with face blurring.")
-
 
 uploaded_file = st.file_uploader("Choose an image", type=["png", "jpg", "jpeg"])
 

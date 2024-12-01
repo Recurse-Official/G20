@@ -168,68 +168,39 @@ if uploaded_file is not None:
     driving_license = extract_driving_license(extracted_text)
     dob = extract_dob(extracted_text)
     address=extract_address(extracted_text)
+    st.write("Extracted Information: ")
 
-    if aadhaar_number or pan_number or voter_id or driving_license or dob or address:
-          if aadhaar_number:
-              st.success(f"Extracted Aadhaar Number: {aadhaar_number}")
-              
-          if pan_number:
-              st.success(f"Extracted PAN Number: {pan_number}")
-             
-          if voter_id:
-              st.success(f"Extracted Voter ID Number: {voter_id}")
-             
-          if driving_license:
-              st.success(f"Extracted Driving License Number: {driving_license}")
-            
-          if dob:
-              st.success(f"Extracted DOB: {dob}")
-             
-          if address:
-              st.success(f"Extracted address: {address}")
+
 
     extracted_info = {}
     if aadhaar_number:
+        st.success(f"Aadhaar Number: {aadhaar_number}")
         extracted_info["Aadhaar Number"] = aadhaar_number
     if pan_number:
+        st.success(f"PAN Number: {pan_number}")
         extracted_info["PAN Number"] = pan_number
     if voter_id:
+        st.success(f"Voter ID: {voter_id}")
         extracted_info["Voter ID"] = voter_id
     if driving_license:
+        st.success(f"Driving License: {driving_license}")
         extracted_info["Driving License"] = driving_license
     if dob:
+        st.success(f"Date of Birth: {dob}")
         extracted_info["Date of Birth"] = dob
     if address:
+        st.success(f"Address: {address}")
         extracted_info["Address"] = address
+    extracted_info["BLur Faces"]="Yes"
 
     if extracted_info:
-        st.write("Extracted Information:")
+        
         selected_pii = st.multiselect(
             "Select the PII to Mask",
             options=extracted_info.keys(),
             default=list(extracted_info.keys())
         )
-    extracted_info = {}
-    if aadhaar_number:
-        extracted_info["Aadhaar Number"] = aadhaar_number
-    if pan_number:
-        extracted_info["PAN Number"] = pan_number
-    if voter_id:
-        extracted_info["Voter ID"] = voter_id
-    if driving_license:
-        extracted_info["Driving License"] = driving_license
-    if dob:
-        extracted_info["Date of Birth"] = dob
-    if address:
-        extracted_info["Address"] = address
 
-    if extracted_info:
-        st.write("Extracted Information:")
-        selected_pii = st.multiselect(
-            "Select the PII to Mask",
-            options=extracted_info.keys(),
-            default=list(extracted_info.keys())
-        )
 
         if st.button("Apply Masking"):
             if selected_pii:
@@ -246,7 +217,8 @@ if uploaded_file is not None:
                         img_rgb = mask_text(img_rgb, extracted_info[pii_type])
                     elif pii_type == "Address":
                         img_rgb = mask_address(img_rgb, extracted_info[pii_type])
-                img_rgb = blur_faces(img_rgb)
+                    elif pii_type=="Blur Faces":
+                        img_rgb = blur_faces(img_rgb)
 
                 masked_pil = Image.fromarray(img_rgb)
                 st.image(masked_pil, caption="Masked Image with Blurred Faces", width=300)

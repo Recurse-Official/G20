@@ -63,6 +63,10 @@ if nav == "home":
   st.write("Welcome to the Home Page!")
   st.write("Our solution for the PII shield involves a robust software application designed to scan and detect government issued PII in documents or data.Uses Regular expression (Regex) patterns to identify PII in Aadhaar cards, PAN, Driving Lincense, etc. Allows user to redact or mask PII to ensure privacy compliance.")
 elif nav == "about":
+  st.title("About Us")
+  st.title("Learn more about us on this page")
+  st.title("Who are we?")
+  st.title("We ")
   
 pytesseract.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 

@@ -18,8 +18,8 @@ def extract_pan_number(text):
   return match.group (0) if match else None 
 
 def extract_voter_id(text):
-  driving_license_pattern = r"\b[A-Z]{3}\d{7}\b"
-  match = re.search(driving_license_pattern,text) 
+  voter_id_pattern = r"\b[A-Z]{3}\d{7}\b"
+  match = re.search(voter_id_pattern,text) 
   return match.group (0) if match else None
 
 def extract_driving_license(text):
@@ -41,7 +41,7 @@ def extract_address(text):
       address_started=True
       if address_started:
         address_block.append(line.strip()) 
-        if len(address_block)>=4:
+        if len(address_block) >=4:
           break
 
   address = " ".join(address_block).replace("Address","").replace("पता","").strip()
@@ -124,7 +124,7 @@ def mask_address (image,address):
           text_data["width"][i],
           text_data["height"][i],
         )
-  coords.append(x , y , x+w , y+h)
+  coords.append((x , y , x+w , y+h))
   if not coords:
   return img
   coords=np.array(coords)
@@ -132,9 +132,7 @@ def mask_address (image,address):
     img,
     coords[:, 0].min(), coords[:, 1].min()),
    (coords[:, 2].max(), coords[:, 3].max()),
-   (0, 0, 0),
-   -1
-           )
+   (0, 0, 0), -1)
   return img
 
 def blur_faces(img):

@@ -159,21 +159,20 @@ def mask_text (img,text_to_mask):
         text_data["height"][i],
       )
       img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
-      break
   return img
    
 def mask_address (img,address):
   text_data = pytesseract.image_to_data(img, output_type =pytesseract.output.DICT)
   coords=[]
   for i , word in enumerate (text_data["text"]):
-      if word.strip() in address and len(word.strip()) >1:
-        x,y,w,h = (
+      if word.strip() in address and len(word.strip()) > 1:
+        x, y, w, h = (
           text_data["left"][i],
           text_data["top"][i],
           text_data["width"][i],
           text_data["height"][i],
         )
-  coords.append((x , y , x+w , y+h))
+  coords.append((x , y , x + w , y + h))
   if not coords:
     return img
   coords=np.array(coords)
@@ -183,9 +182,9 @@ def mask_address (img,address):
 
 def blur_faces(img):
   gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-  faces=face_cascade.detectMultiScale(gray_img,scalefactor=1.1,minNeighbors=5,minSize=(30,30))
-  for (x,y,w,h) in faces:
-    face=img[y:y+h,x:x+w]
+  faces = face_cascade.detectMultiScale(gray_img, scalefactor=1.1, minNeighbors=5, minSize=(30, 30))
+  for (x, y, w, h) in faces:
+    face=img[y:y+h, x:x+w]
     blurred_face=cv2.GaussianBlur(face, (51,51), 30)
     img[y:y+h,x:x+w]=blurred_face
   return img

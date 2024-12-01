@@ -9,38 +9,47 @@ st.markdown(
   """
   <style>
   .stApp{
-  background-color: #1f2b2b;
-  color: #E5E5E5;
+    background-color: #1f2b2b;
+    color: #E5E5E5;
   }
-  html, body, [class*="css"] {
+  
+    html, body, [class*="css"] {
     color: #E5E5E5 !important;
     }
+    
     header[data-testid="stHeader"] {
-    background-color: #1f2b2b;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    }
-    .nav-buttons a {
-      text-decoration: none;
-      color: #1f2b2b;
-      background-color: #E5E5E5;
+      background-color: #1f2b2b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 0.5rem 1rem;
-      border-radius: 5px;
-      font-weigth: bold;
-      transition: background-color 0.3s,color 0.3s;
+    }
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+     } 
+    .nav-buttons a {
+        text-decoration: none;
+        color: #1f2b2b;
+        background-color: #E5E5E5;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-weigth: bold;
+        transition: background-color 0.3s,color 0.3s;
       }
       .nav-buttons a:hover {
-        background-color: #1f2b2b;color: #e5E5E5;
+          background-color: #1f2b2b;
+          color: #e5E5E5;
         }
        </style>
        <header data-testid="stHeader">
          <div class="nav-buttons">
            <a href="/?nav=home">Home</a>
+           <a href="/?nav=about">About Us</a>
           </div>
-          </header>
+        </header>
   """
+)
 pytesseract.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+ "haarcasade_frontalface_default.xml")
 def extract_aadhaar_number (text):
@@ -162,17 +171,13 @@ def mask_address (image,address):
         )
   coords.append((x , y , x+w , y+h))
   if not coords:
-  return img
+    return img
   coords=np.array(coords)
-  img=cv2.rectangle(
-    img,
-    coords[:, 0].min(), coords[:, 1].min()),
-   (coords[:, 2].max(), coords[:, 3].max()),
-   (0, 0, 0), -1)
+  img=cv2.rectangle(img, (coords[:, 0].min(), coords[:, 1].min()),
+                     (coords[:, 2].max(), coords[:, 3].max()), (0, 0, 0), -1)
   return img
 
 def blur_faces(img):
-  
   gray_img=cv2.cvtColor(img.cv2.COLOR_BR2GRAY)
   faces=face_cascade.detectMultiScale(gray_img,scalefactor=1.1,minNeighbors=5,minSize=(30,30))
   for (x,y,w,h) in faces:

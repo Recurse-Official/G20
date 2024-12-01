@@ -31,7 +31,15 @@ st.markdown(
       font-weigth: bold;
       transition: background-color 0.3s,color 0.3s;
       }
-      
+      .nav-buttons a:hover {
+        background-color: #1f2b2b;color: #e5E5E5;
+        }
+       </style>
+       <header data-testid="stHeader">
+         <div class="nav-buttons">
+           <a href="/?nav=home">Home</a>
+          </div>
+          </header>
   """
 pytesseract.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+ "haarcasade_frontalface_default.xml")

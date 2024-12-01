@@ -12,21 +12,6 @@ def extract_aadhaar_number (text):
   match = re.search(aadhaar_pattern,text)
   return match.group (0) if match else None
  
-def mask_aadhaar_number (image,aadhaar_number):
-  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
-  for i,word in enumerate (text_data["text"])
-:
-  if word in aadhar_no & len(word)==4:
-    x,y,w,h= 
-    (
-      text_data["left"][i],
-      text_data["top"][i],
-      text_data["width"][i],
-      text_data["height"][i],
-    )
-    img =cv2.rectangle(img, (x,y) , (x+w,y+h), (0,0,0), -1)
-return img
-
 def extract_pan_number(text):
   pan_pattern= r "\b[A-Z]{5}\d{4}[A-Z]\b"
   match= re.search(pan_pattern,text)
@@ -46,10 +31,52 @@ def mask_pan_number (image,pan_number):
     img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
 return img
 
+def extract_voter_id(text):
+  driving_license_pattern = r "\b[A-Z]{3}\b{7}\b"
+  match = re.search(driving_license_pattern,text) 
+  return match. group (0) if match else None
+
+def extract_driving_license(text):
+  driving_license_pattern = r "\b[A-Z]{2}[- ]?d{2}[- ]?\d{7,13}\b"
+  match = re.search(driving_license_pattern,text) 
+  return match. group (0) if match else None
+
 def extract_dob(text):
   dob_pattern = r "\b\d{2}/\d{2}/\d{4}\b"
   match = re.search(dob_pattern,text) 
   return match. group (0) if match else None
+
+def extract_address(text):
+  lines= text.split('\n')
+  address_block=[]
+  address_started=False
+  for line in lines:
+    if "Address" in line or "पता" in line:
+     address_started=True
+      if address_started:
+      address_block.append(line.strip()) 
+        if len(address_block)>=4:
+          break
+
+    address = " ".join(address_block).replace("Address","").replace("पता","").strip()
+    return address if address else None
+def mask_aadhaar_number (image,aadhaar_number):
+  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  for i,word in enumerate (text_data["text"])
+:
+  if word in aadhar_no & len(word)==4:
+    x,y,w,h= 
+    (
+      text_data["left"][i],
+      text_data["top"][i],
+      text_data["width"][i],
+      text_data["height"][i],
+    )
+    img =cv2.rectangle(img, (x,y) , (x+w,y+h), (0,0,0), -1)
+return img
+  
+
+
 
 def mask_text (image,text_to_mask):
   text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
@@ -66,10 +93,7 @@ def mask_text (image,text_to_mask):
     break
 return img
    
-  def extract_driving_license(text):
- driving_license_pattern = r "\b[A-Z]{2}[- ]?d{2}[- ]?\d{7,13}\b"
-  match = re.search(driving_license_pattern,text) 
-  return match. group (0) if match else None
+ 
 
   def mask_driving_license (image,driving_license):
   text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
@@ -84,8 +108,7 @@ return img
     )
     img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
 return img
-
-      def extract_voter_id(text):
+def extract_voter_id(text):
  driving_license_pattern = r "\b[A-Z]{3}\b{7}\b"
   match = re.search(driving_license_pattern,text) 
   return match. group (0) if match else None
@@ -104,20 +127,7 @@ return img
     img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
 return img
 
-def extract_address(text):
-  lines= text.split('\n')
-  address_block=[]
-  address_started=False
-  for line in lines:
-    if "Address" in line or "पता" in line:
-     address_started=True
-      if address_started:
-      address_block.append(line.strip()) 
-        if len(address_block)>=4:
-          break
 
-  address = " ".join(address_block).replace("Address","").replace("पता","").strip()
-  return address if address else None
 
 def mask_address (image,voter_id):
   text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)

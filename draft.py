@@ -96,8 +96,8 @@ def extract_address(text):
   address = " ".join(address_block).replace("Address","").replace("पता","").strip()
   return address if address else None
     
-def mask_aadhaar_number (image,aadhaar_number):
-  text_data = pytesseract.image_to_data(image, output_type =pytesseract.output.DICT)
+def mask_aadhaar_number (img,aadhaar_number):
+  text_data = pytesseract.image_to_data(img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data["text"]):
     if word in aadhaar_number and len(word)==4:
       x,y,w,h= (
@@ -109,7 +109,7 @@ def mask_aadhaar_number (image,aadhaar_number):
     img =cv2.rectangle(img, (x, y) , (x + w, y + h ), (0, 0, 0), -1)
   return img
 
-def mask_pan_number (image,pan_number):
+def mask_pan_number (img,pan_number):
   text_data = pytesseract.image_to_data(img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data["text"]):
     if word ==pan_number:
@@ -122,7 +122,7 @@ def mask_pan_number (image,pan_number):
     img =cv2.rectangle(img , (x, y) , (x + w, y + h) , (0, 0, 0) , -1)
   return img
 
-def mask_voter_id (image,voter_id):
+def mask_voter_id (img,voter_id):
   text_data = pytesseract.image_to_data(img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data["text"]):
     if word ==voter_id:
@@ -135,7 +135,7 @@ def mask_voter_id (image,voter_id):
     img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
   return img
 
-def mask_driving_license (image,driving_license):
+def mask_driving_license (img,driving_license):
   text_data = pytesseract.image_to_data(img, output_type =pytesseract.output.DICT)
   for i , word in enumerate (text_data["text"]):
     if word ==driving_license:
@@ -148,7 +148,7 @@ def mask_driving_license (image,driving_license):
     img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
   return img
 
-def mask_text (image,text_to_mask):
+def mask_text (img,text_to_mask):
   text_data = pytesseract.image_to_data( img, output_type =pytesseract.output.DICT)
   for i, word in enumerate (text_data["text"]):
     if text_to_mask in word:
@@ -162,7 +162,7 @@ def mask_text (image,text_to_mask):
       break
   return img
    
-def mask_address (image,address):
+def mask_address (img,address):
   text_data = pytesseract.image_to_data(img, output_type =pytesseract.output.DICT)
   coords=[]
   for i , word in enumerate (text_data["text"]):

@@ -191,16 +191,14 @@ def blur_faces(img):
   return img
  
 st.title("Document Details Extractor & Masker")
-st.write("Upload an image to extract Aadhaar, PAN, Voter ID, Driving License numbers, DOB details, and automatically mask them along with face blurring.")
+st.write("Upload an image to extract Aadhaar, PAN, Voter ID, Driving License numbers, DOB details, and optionally mask them along with face blurring.")
 
 uploaded_file = st.file_uploader("Choose an image", type=["png", "jpg", "jpeg"])
 
 if uploaded_file is not None:
-    
     image = Image.open(uploaded_file)
     img_array = np.array(image)
-    img_array = cv2.erode(img_array, kernel=np.ones((2,1)), iterations=1)
-    
+    #img_array = cv2.erode(img_array, kernel=np.ones((2,1)), iterations=1)
     img_rgb = img_array.copy()
 
     extracted_text = pytesseract.image_to_string(img_array)
@@ -211,9 +209,8 @@ if uploaded_file is not None:
     driving_license = extract_driving_license(extracted_text)
     dob = extract_dob(extracted_text)
     address=extract_address(extracted_text)
+  
     st.write("Extracted Information: ")
-
-
 
     extracted_info = {}
     if aadhaar_number:
@@ -234,20 +231,19 @@ if uploaded_file is not None:
     if address:
         st.success(f"Address: {address}")
         extracted_info["Address"] = address
-    extracted_info["Blur Faces"]= "Yes"
+      
+    extracted_info["Blur Faces"] = "Yes"
 
     if extracted_info:
         
         selected_pii = st.multiselect(
-            "Select the PII to Mask",
+            "Select the PII to Mask or Blur",
             options=extracted_info.keys(),
             default=list(extracted_info.keys())
         )
-
-
-        if st.button("Apply Masking"):
-            if selected_pii:
-                for pii_type in selected_pii:
+      
+         if st.button("Apply Masking"):
+           for pii_type in selected_pii:
                     if pii_type == "Aadhaar Number":
                         img_rgb = mask_aadhaar_number(img_rgb, extracted_info[pii_type])
                     elif pii_type == "PAN Number":
@@ -264,19 +260,17 @@ if uploaded_file is not None:
                         img_rgb = blur_faces(img_rgb)
 
                 masked_pil = Image.fromarray(img_rgb)
-                st.image(masked_pil, caption="Masked Image with Blurred Faces", width=300)
+                st.image(masked_pil, caption="Masked and Blurred Image", use_container_width = True)
 
                 masked_pil.save("masked_image.png")
                 with open("masked_image.png", "rb") as file:
                     st.download_button(
-                        label="Download Masked Image",
+                        label="Download Masked and Blurred Image",
                         data=file,
                         file_name="masked_image.png",
                         mime="image/png",
                     )
-    else:
-        st.error("No sensitive information detected.")
-
+    
 
   
 

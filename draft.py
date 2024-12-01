@@ -5,6 +5,24 @@ import numpy as np
 from PIL import Image
 import streamlit as st
 
+st.markdown(
+  """
+  <style>
+  .stApp{
+  background-color: #1f2b2b;
+  color: #E5E5E5;
+  }
+  html, body, [class*="css"] {
+    color: #E5E5E5 !important;
+    }
+    header[data-testid="stHeader"] {
+    background-color: #1f2b2b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    }
+  """
 pytesseract.pytesseract.tesseract_cmd= r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+ "haarcasade_frontalface_default.xml")
 def extract_aadhaar_number (text):

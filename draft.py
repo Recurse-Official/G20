@@ -17,19 +17,7 @@ def extract_pan_number(text):
   match= re.search(pan_pattern,text)
   return match.group (0) if match else None 
 
-def mask_pan_number (image,pan_number):
-  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
-  for i,word in enumerate (text_data["text"]):
-  if word ==pan_number:
-    x,y,w,h= 
-    (
-      text_data["left"][i],
-      text_data["top"][i],
-      text_data["width"][i],
-      text_data["height"][i],
-    )
-    img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
-return img
+
 
 def extract_voter_id(text):
   driving_license_pattern = r "\b[A-Z]{3}\b{7}\b"
@@ -60,6 +48,7 @@ def extract_address(text):
 
     address = " ".join(address_block).replace("Address","").replace("पता","").strip()
     return address if address else None
+    
 def mask_aadhaar_number (image,aadhaar_number):
   text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
   for i,word in enumerate (text_data["text"])
@@ -74,9 +63,48 @@ def mask_aadhaar_number (image,aadhaar_number):
     )
     img =cv2.rectangle(img, (x,y) , (x+w,y+h), (0,0,0), -1)
 return img
-  
 
+def mask_pan_number (image,pan_number):
+  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  for i,word in enumerate (text_data["text"]):
+  if word ==pan_number:
+    x,y,w,h= 
+    (
+      text_data["left"][i],
+      text_data["top"][i],
+      text_data["width"][i],
+      text_data["height"][i],
+    )
+    img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
+return img
 
+def mask_voter_id (image,voter_id):
+  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  for i,word in enumerate (text_data["text"]):
+  if word ==voter_id:
+    x,y,w,h= 
+    (
+      text_data["left"][i],
+      text_data["top"][i],
+      text_data["width"][i],
+      text_data["height"][i],
+    )
+    img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
+return img
+
+def mask_driving_license (image,driving_license):
+  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
+  for i , word in enumerate (text_data["text"]:)
+  if word ==driving_license:
+    x,y,w,h= 
+    (
+      text_data["left"][i],
+      text_data["top"][i],
+      text_data["width"][i],
+      text_data["height"][i],
+    )
+    img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
+return img
 
 def mask_text (image,text_to_mask):
   text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
@@ -93,42 +121,6 @@ def mask_text (image,text_to_mask):
     break
 return img
    
- 
-
-  def mask_driving_license (image,driving_license):
-  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
-  for i , word in enumerate (text_data["text"]:)
-  if word ==driving_license:
-    x,y,w,h= 
-    (
-      text_data["left"][i],
-      text_data["top"][i],
-      text_data["width"][i],
-      text_data["height"][i],
-    )
-    img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
-return img
-def extract_voter_id(text):
- driving_license_pattern = r "\b[A-Z]{3}\b{7}\b"
-  match = re.search(driving_license_pattern,text) 
-  return match. group (0) if match else None
-
-  def mask_voter_id (image,voter_id):
-  text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
-  for i,word in enumerate (text_data["text"]):
-  if word ==voter_id:
-    x,y,w,h= 
-    (
-      text_data["left"][i],
-      text_data["top"][i],
-      text_data["width"][i],
-      text_data["height"][i],
-    )
-    img =cv2.rectangle(img , (x,y) , (x+w,y+h) , (0,0,0) , -1)
-return img
-
-
-
 def mask_address (image,voter_id):
   text_data = pytesseract.image_to_date ( img, output_type =pytesseract.output.DICT)
   coords=[]
@@ -177,10 +169,8 @@ if uploaded_file is not None:
     
     img_rgb = img_array.copy()
 
-  
     extracted_text = pytesseract.image_to_string(img_array)
-
-    
+  
     aadhaar_number = extract_aadhaar_number(extracted_text)
     pan_number = extract_pan_number(extracted_text)
     voter_id = extract_voter_id(extracted_text)
@@ -188,53 +178,101 @@ if uploaded_file is not None:
     dob = extract_dob(extracted_text)
     address=extract_address(extracted_text)
 
-    
     if aadhaar_number or pan_number or voter_id or driving_license or dob or address:
-        if aadhaar_number:
-            st.success(f"Extracted Aadhaar Number: {aadhaar_number}")
-            img_rgb = mask_aadhaar_number(img_rgb, aadhaar_number)
-        if pan_number:
-            st.success(f"Extracted PAN Number: {pan_number}")
-            img_rgb = mask_pan_number(img_rgb, pan_number)
-        if voter_id:
-            st.success(f"Extracted Voter ID Number: {voter_id}")
-            img_rgb = mask_voter_id(img_rgb, voter_id)
-        if driving_license:
-            st.success(f"Extracted Driving License Number: {driving_license}")
-            img_rgb = mask_driving_license(img_rgb, driving_license)
-        if dob:
-            st.success(f"Extracted DOB: {dob}")
-            img_rgb = mask_text(img_rgb, dob)
-        if address:
-            st.success(f"Extracted address: {address}")
-            img_rgb = mask_address(img_rgb, address)
-        
+          if aadhaar_number:
+              st.success(f"Extracted Aadhaar Number: {aadhaar_number}")
+              
+          if pan_number:
+              st.success(f"Extracted PAN Number: {pan_number}")
+             
+          if voter_id:
+              st.success(f"Extracted Voter ID Number: {voter_id}")
+             
+          if driving_license:
+              st.success(f"Extracted Driving License Number: {driving_license}")
+            
+          if dob:
+              st.success(f"Extracted DOB: {dob}")
+             
+          if address:
+              st.success(f"Extracted address: {address}")
 
-  
-    img_rgb = blur_faces(img_rgb)
+  extracted_info = {}
+    if aadhaar_number:
+        extracted_info["Aadhaar Number"] = aadhaar_number
+    if pan_number:
+        extracted_info["PAN Number"] = pan_number
+    if voter_id:
+        extracted_info["Voter ID"] = voter_id
+    if driving_license:
+        extracted_info["Driving License"] = driving_license
+    if dob:
+        extracted_info["Date of Birth"] = dob
+    if address:
+        extracted_info["Address"] = address
 
-    masked_pil = Image.fromarray(img_rgb)
-
-    
-    st.image(masked_pil, caption="Masked Image with Blurred Faces", width=300)
-
-    
-    masked_pil.save("masked_image.png")
-    with open("masked_image.png", "rb") as file:
-        st.download_button(
-            label="Download Masked Image",
-            data=file,
-            file_name="masked_image.png", 
-            mime="image/png",
+    if extracted_info:
+        st.write("Extracted Information:")
+        selected_pii = st.multiselect(
+            "Select the PII to Mask",
+            options=extracted_info.keys(),
+            default=list(extracted_info.keys())
         )
-    st.success("Faces blurred and sensitive information masked successfully!")
+      
+            
 
+    extracted_info = {}
+    if aadhaar_number:
+        extracted_info["Aadhaar Number"] = aadhaar_number
+    if pan_number:
+        extracted_info["PAN Number"] = pan_number
+    if voter_id:
+        extracted_info["Voter ID"] = voter_id
+    if driving_license:
+        extracted_info["Driving License"] = driving_license
+    if dob:
+        extracted_info["Date of Birth"] = dob
+    if address:
+        extracted_info["Address"] = address
 
+    if extracted_info:
+        st.write("Extracted Information:")
+        selected_pii = st.multiselect(
+            "Select the PII to Mask",
+            options=extracted_info.keys(),
+            default=list(extracted_info.keys())
+        )
 
+        if st.button("Apply Masking"):
+            if selected_pii:
+                for pii_type in selected_pii:
+                    if pii_type == "Aadhaar Number":
+                        img_rgb = mask_aadhaar_number(img_rgb, extracted_info[pii_type])
+                    elif pii_type == "PAN Number":
+                        img_rgb = mask_pan_number(img_rgb, extracted_info[pii_type])
+                    elif pii_type == "Voter ID":
+                        img_rgb = mask_voter_id(img_rgb, extracted_info[pii_type])
+                    elif pii_type == "Driving License":
+                        img_rgb = mask_driving_license(img_rgb, extracted_info[pii_type])
+                    elif pii_type == "Date of Birth":
+                        img_rgb = mask_text(img_rgb, extracted_info[pii_type])
+                    elif pii_type == "Address":
+                        img_rgb = mask_address(img_rgb, extracted_info[pii_type])
+                img_rgb = blur_faces(img_rgb)
 
+                masked_pil = Image.fromarray(img_rgb)
+                st.image(masked_pil, caption="Masked Image with Blurred Faces", width=300)
 
-
-
+                masked_pil.save("masked_image.png")
+                with open("masked_image.png", "rb") as file:
+                    st.download_button(
+                        label="Download Masked Image",
+                        data=file,
+                        file_name="masked_image.png",
+                        mime="image/png",
+                    )
+    else:
+        st.error("No sensitive information detected.")
 
 
   

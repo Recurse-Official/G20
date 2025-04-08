@@ -1,0 +1,2400 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 5983
+>>
+stream
+0.200025 w
+0 G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0 g
+10. 816.8899999999999864 Td
+(Project 1: GenAI_Finance_GPT) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9799999999758029 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9799999999758029 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(GenAI_Finance_GPT) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9799999999758029 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -67.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9799999999758029 -67.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(The world of finance is complex and constantly changing. Making sense of financial data can be a) Tj
+T* (daunting task, even for seasoned professionals. This mobile app classifies finance documents,provide) Tj
+T* (answers to the finance related questions,summarize and masking the important financial information in) Tj
+T* (the financial documents using GenAI techniques.The project will explore  federated learning in model) Tj
+T* (training which offers privacy, security, regulatory, and economic benefits.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 653.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 639.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 653.3899999999999864 459.9799999999758029 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 639.8899999999999864 Td
+(Flutter/Firebase, GenAI, Flutter Hooks, AWS) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 620.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 606.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 620.3899999999999864 459.9799999999758029 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 606.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 462.3899999999999864 Td
+(Project 2: TRAVIS- TRansformer-based Assistant for VIsually impaired Service agents) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 442.3899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 428.8899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 442.3899999999999864 459.9799999999973465 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 428.8899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 420.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 407.3899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 420.8899999999999864 459.9799999999973465 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 407.3899999999999864 Td
+(TRAVIS- TRansformer-based Assistant for VIsually impaired Service agents) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 387.8899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 374.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 387.8899999999999864 459.9799999999973465 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 374.3899999999999864 Td
+(GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 366.3899999999999864 55.3000000000000043 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 352.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 366.3899999999999864 459.9799999999973465 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 352.8899999999999864 Td
+(Transformer Based Help Desk for Visually Impaired Service Agents with voice assistance integrated) Tj
+T* (project aims to design and implement a transformer based AI system developed from scratch  that) Tj
+T* (enables visually impaired bank representatives to handle customer queries efficiently. The system will) Tj
+T* (process input queries, classify them into standardized categories, translate responses into local) Tj
+T* (languages, and convert them into speech for the representative to communicate. It focuses on) Tj
+T* (empowering visually impaired bank agent/representative to provide accurate, timely responses using) Tj
+T* (advanced transformer-based models.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 275.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 262.3899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 275.8899999999999864 459.9799999999973465 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 262.3899999999999864 Td
+(MERN,GenAI , TTS) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 242.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 229.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 242.8899999999999864 459.9799999999973465 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 229.3899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 7033
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 3: TALQS- Transformer-based Architecture for Legal Question Answering and Summarization.) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9799999999669922 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9799999999669922 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(TALQS- Transformer-based Architecture for Legal Question Answering and Summarization.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9799999999669922 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -136.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9799999999669922 -136.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(The legal system generates extensive and complex judgments, making it challenging for professionals) Tj
+T* (and the general public to extract essential information efficiently. This project aims to design and) Tj
+T* (implement Transformer-based models to address two critical objectives: summarizing legal judgments) Tj
+T* (into concise and coherent summaries, and answering specific legal queries accurately based on the) Tj
+T* (full text of judgments. With a dataset of  judgments available in PDF format, pre-trained models like T5) Tj
+T* (and BERT optionally will be utilized to prepare annotated datasets for training.Transformer models will) Tj
+T* (be developed from scratch, with  randomly selected and diverse cases used to train each model) Tj
+T* (independently. The summarization model will focus on providing overviews, while the) Tj
+T* (question-answering model will extract precise answers from the full judgment text. Both models will be) Tj
+T* (rigorously tested  to evaluate their effectiveness and generalization capabilities, ensuring they meet) Tj
+T* (the demands of real-world legal applications.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 584.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 570.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 584.3899999999999864 459.9799999999669922 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 570.8899999999999864 Td
+(MERN,GenAI , TTS) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 551.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 537.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 551.3899999999999864 459.9799999999669922 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 537.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 393.3899999999999864 Td
+(Project 4: AVATARLAB) Tj
+T* (Building smart & realistic AI avatars) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 373.3899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 359.8899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 373.3899999999999864 459.9799999999661395 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 359.8899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 351.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 338.3899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 351.8899999999999864 459.9799999999661395 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 338.3899999999999864 Td
+(AVATARLAB) Tj
+T* (Building smart & realistic AI avatars) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 318.8899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 305.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 318.8899999999999864 459.9799999999661395 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 305.3899999999999864 Td
+(GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 297.3899999999999864 55.3000000000000043 -286. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 283.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 297.3899999999999864 459.9799999999661395 -286. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 283.8899999999999864 Td
+(=€ Imagine this: You type a script, and within seconds, a lifelike digital avatar speaks it back with) Tj
+T* (natural expressions, lip-sync, and voice modulation. Sounds futuristic? Welcome to Avatar Lab, where) Tj
+T* (you bring AI-powered avatars to life!) Tj
+T* () Tj
+T* (In this project, students will develop a cutting-edge animation pipeline that converts text into realistic) Tj
+T* (talking head videos. By integrating DiffTalk for high-quality facial animation and SMALL-E for efficient) Tj
+T* (speech synthesis, youll craft an AI system that generates avatars capable of expressing emotions,) Tj
+T* (syncing lip movements, and speaking just like a real human!) Tj
+T* () Tj
+T* (With access to an RTX 4090 GPU \(provided by college\), your team will explore the power of deep) Tj
+T* (learning, optimize inference pipelines, and push the boundaries of AI-driven animation.) Tj
+T* () Tj
+T* (What Youll Learn:) Tj
+T* ( Deep Learning for Animation  Understand how AI generates realistic facial movements.) Tj
+T* ( Speech Synthesis & Lip Sync  Implement models that synchronize voice with visual expression.) Tj
+T* ( Optimizing AI Models for Performance  Leverage GPU acceleration to make real-time avatar) Tj
+T* (generation possible.) Tj
+T* ( Building an End-to-End AI System  Gain hands-on experience in integrating multiple deep-learning) Tj
+T* (models into a seamless workflow.) Tj
+T* ( Innovation in Digital Media  Explore real-world applications in virtual assistants, gaming, education,) Tj
+T* (and beyond!) Tj
+T* () Tj
+T* (=9 Who should join? If you love AI, animation, and innovation, this project is your playground! Get) Tj
+T* (ready to turn text into talking avatars and shape the future of AI-powered storytelling. <¬\() Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.78 G
+0. w
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 8 0 R
+>>
+endobj
+8 0 obj
+<<
+/Length 3355
+>>
+stream
+0. w
+0.78 G
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 831.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 818.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 831.8899999999999864 459.9799999999661395 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 818.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 810.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 796.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 810.3899999999999864 459.9799999999661395 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 796.8899999999999864 Td
+(MERN, ) Tj
+T* (Models\(DiffTalk \(talking head animation\)Small-E \(Speech cloning, TTS\)\)) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 777.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 763.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 777.3899999999999864 459.9799999999661395 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 763.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 195.8899999999999864 Td
+(Project 5: CodeGenie) Tj
+T* (AI companion for effortless) Tj
+T* (code creation) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 175.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 162.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 175.8899999999999864 459.9800000000291789 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 162.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 154.3899999999999864 55.3000000000000043 -44.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 140.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 154.3899999999999864 459.9800000000291789 -44.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 140.8899999999999864 Td
+(CodeGenie) Tj
+T* (AI companion for effortless) Tj
+T* (code creation) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 109.8899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 96.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 109.8899999999999864 459.9800000000291789 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 96.3899999999999864 Td
+(GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 88.3899999999999864 55.3000000000000043 -67.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 74.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 88.3899999999999864 459.9800000000291789 -67.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 74.8899999999999864 Td
+(=€ Wish you could write code effortlessly? Meet CodeGenie! Just type a prompt, and like magic, your) Tj
+T* (VS Code extension will generate intelligent, context-aware code snippets in seconds!) Tj
+T* () Tj
+T* (In this project, youll develop a smart coding assistant powered by DeepSeek Coder, a cutting-edge) Tj
+T* (AI model designed for code generation. Your extension will help developers by providing real-time) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.78 G
+0. w
+endstream
+endobj
+9 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 2577
+>>
+stream
+0. w
+0.78 G
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 831.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 818.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 831.8899999999999864 459.9800000000291789 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 818.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 810.3899999999999864 55.3000000000000043 -194. re
+B
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 810.3899999999999864 459.9800000000291789 -194. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 796.8899999999999864 Td
+(code suggestions, autocompletions, and intelligent snippets, making coding faster, smarter, and more) Tj
+T* (efficient.) Tj
+T* () Tj
+T* (To make your AI-powered assistant fast and accurate, youll get access to an RTX 4090 GPU) Tj
+T* (\(provided by college\) for inference, letting you experience real-world AI deployment and optimization.) Tj
+T* () Tj
+T* (What Youll Learn:) Tj
+T* ( AI-Powered Code Generation  Implement and fine-tune a state-of-the-art coding LLM.) Tj
+T* ( Plugin Development  Learn how to build, test, and deploy a fully functional VS Code extension.) Tj
+T* ( Optimizing AI for Performance  Utilize GPU acceleration to enhance inference speed and efficiency.) Tj
+T* ( Enhancing Developer Productivity  Explore how AI can automate coding tasks and improve) Tj
+T* (workflow.) Tj
+T* () Tj
+T* (=9 Who should join? If youre passionate about AI, coding, and automation, this project is your) Tj
+T* (gateway to building the future of smart development tools! Get ready to create the ultimate coding) Tj
+T* (companion and make developers lives easier. =€=») Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 616.3899999999999864 55.3000000000000043 -56. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 602.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 616.3899999999999864 459.9800000000291789 -56. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 602.8899999999999864 Td
+(VS code extension implementation,) Tj
+T* (Model:) Tj
+T* (DeepSeek-Coder) Tj
+T* (\(AI code generator\)) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 560.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 546.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 560.3899999999999864 459.9800000000291789 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 546.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+11 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 12 0 R
+>>
+endobj
+12 0 obj
+<<
+/Length 6428
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 6: Implementing a Multi-Class Table Transformation Framework using Large Language Models for Data Integration) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9799999999980855 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9799999999980855 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(Implementing a Multi-Class Table Transformation Framework using Large Language Models for Data) Tj
+T* (Integration) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9799999999980855 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -596.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9799999999980855 -596.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(Project Goal: To design and implement a system, TabulaX, that can automatically transform tabular) Tj
+T* (data from diverse sources into consistent formats, leveraging the capabilities of Large Language) Tj
+T* (Models \(LLMs\). This system should classify input tables into different transformation classes and) Tj
+T* (apply appropriate methods for each class. The goal is to provide an interpretable, accurate, and) Tj
+T* (efficient solution for data integration and transformation.) Tj
+T* (Project Objectives:) Tj
+T* (" Classification Module: Develop a classifier using an LLM to categorize input tables into four) Tj
+T* (transformation classes: string-based, numerical, algorithmic, and general. The classifier ) Tj
+T* (should be able to distinguish between different types of data and apply appropriate transformation) Tj
+T* (methods. ) Tj
+T* (o String-based transformations involve manipulations like substring extraction, concatenation, and) Tj
+T* (case conversions.) Tj
+T* (o Numerical transformations deal with mathematical operations, such as linear, polynomial,) Tj
+T* (exponential, and rational functions.) Tj
+T* (o Algorithmic transformations include conversions that follow specific algorithms, like date conversions) Tj
+T* (or character encoding changes.) Tj
+T* (o General transformations involve mappings that require external knowledge or do not fit the other) Tj
+T* (three categories, like linking company names to CEO's.) Tj
+T* (" Transformation Modules: Implement separate modules for each transformation class that generate) Tj
+T* (human-interpretable transformation functions. ) Tj
+T* (o For numerical transformations, use curve fitting algorithms to find the best-fit function and generate) Tj
+T* (the corresponding code in Python.) Tj
+T* (o For string transformations, prompt an LLM to generate Python functions that perform the required) Tj
+T* (string manipulations.) Tj
+T* (o For algorithmic transformations, use a Chain-of-Thought approach to first identify the relationship) Tj
+T* (between source and target data and then generate the corresponding Python code.) Tj
+T* (o For general transformations, use a Chain-of-Thought approach to detect column types and then use) Tj
+T* (LLMs to generate a lookup function to predict the target values) Tj
+T* (o Python code is generated during couple of Transformations that needs to be executed and the) Tj
+T* (output used for implementing the Transformation. Consider performing this task using ) Tj
+T* (Agent Framework. ) Tj
+T* (" Data Handling: Develop a system for serializing input tables into text sequences that LLMs can) Tj
+T* (process.) Tj
+T* (" Evaluation: Evaluate the systems performance on real-world datasets) Tj
+T* (" Expected Outcomes:) Tj
+T* (o A functional software system capable of performing multi-class table transformations.) Tj
+T* (o A clear understanding of how LLMs can be leveraged for data transformation tasks.) Tj
+T* (o Understanding the limitations and challenges of using LLMs for table transformations.) Tj
+T* (" Additional Considerations:) Tj
+T* (o Interpretability: Ensure that all generated transformation functions are human-interpretable, either as) Tj
+T* (numerical formulas or programming code.) Tj
+T* (o Flexibility: Make the system flexible enough to integrate with different LLMs.) Tj
+T* (o Error Handling: Implement robust error handling to manage missing values, unexpected input) Tj
+T* (formats, and other possible errors.) Tj
+T* (o Downstream Tasks: Demonstrate how the generated transformation functions can facilitate) Tj
+T* (downstream tasks, such as heterogeneous table joins.) Tj
+T* () Tj
+T* (Three Step Challenge: ) Tj
+T* (i. Connect the system with a Database \(say MySQL\) and perform the Transformations) Tj
+T* (ii. Take another database \(say MongoDB\) to perform the Transformations ) Tj
+T* (iii. Use Agentic framework for implementing steps \(i\) and \(ii\).) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 124.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 110.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 124.3899999999999864 459.9799999999980855 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 110.8899999999999864 Td
+(Gen AI/LLM, MERN, MySQL, MongoDB) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 91.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 77.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 91.3899999999999864 459.9799999999980855 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 77.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+13 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 14 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 6917
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 7: Adaptive Learning Path) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9799999999738702 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9799999999738702 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(Adaptive Learning Path) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9799999999738702 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -159.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9799999999738702 -159.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(In today's rapidly evolving educational landscape, personalized learning approaches are the way to) Tj
+T* (go, especially for children with learning difficulties. Traditional educational methods often fall short in) Tj
+T* (addressing the diverse needs of such learners, leading to disengagement and limited progress. With) Tj
+T* (advancements in artificial intelligence and deep learning, particularly in transformer-based models,) Tj
+T* (there is an opportunity to create intelligent systems that can better understand and respond to a child's) Tj
+T* (unique emotional and behavioral cues. ) Tj
+T* (ALP \(Adaptive Learning Path\) is an adaptive educational platform that uses transformer-based models) Tj
+T* (to analyze facial expressions and gameplay behaviors of children with learning difficulties. This system) Tj
+T* (will dynamically adapt the learning path of the child following challenges and feedback based on the) Tj
+T* (detected emotional states promoting sustained engagement and improved learning outcomes.) Tj
+T* (While the system adjusts the learning path in real-time, it will always prioritize and adhere to the) Tj
+T* (therapists recommended path, ensuring that the adaptive process remains aligned with professional) Tj
+T* (therapeutic goals.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 561.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 547.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 561.3899999999999864 459.9799999999738702 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 547.8899999999999864 Td
+(MERN , Transformers) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 528.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 514.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 528.3899999999999864 459.9799999999738702 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 514.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 370.3899999999999864 Td
+(Project 8: JoyVerse) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 350.3899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 336.8899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 350.3899999999999864 459.9799999999732449 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 336.8899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 328.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 315.3899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 328.8899999999999864 459.9799999999732449 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 315.3899999999999864 Td
+(JoyVerse) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 295.8899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 282.3899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 295.8899999999999864 459.9799999999732449 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 282.3899999999999864 Td
+(GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 274.3899999999999864 55.3000000000000043 -125. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 260.8899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 274.3899999999999864 459.9799999999732449 -125. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 260.8899999999999864 Td
+(In the current world, leveraging technology to create personalized and adaptive learning experiences) Tj
+T* (is key to supporting diverse learning needs. Dyslexic children, in particular, benefit greatly from) Tj
+T* (tailored educational interventions that keep them engaged and motivated. ) Tj
+T* (JoyVerse is a transformer-powered system, which can analyze video feeds of dyslexic children playing) Tj
+T* (educational games to detect their emotional states. ) Tj
+T* (This will require building state-of-the-art transformers for facial expression recognition and temporal) Tj
+T* (sentiment modeling, enabling real-time optimization of game design elements such as difficulty levels,) Tj
+T* (themes, and reward systems, ultimately creating a more effective and enjoyable learning environment.) Tj
+T* (All adjustments and optimizations will be made in alignment with the therapist's guidance, ensuring the) Tj
+T* (tool remains within the boundaries of recommended therapeutic approaches) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 149.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 135.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 149.3899999999999864 459.9799999999732449 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 135.8899999999999864 Td
+(MERN,Transformers) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 116.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 102.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 116.3899999999999864 459.9799999999732449 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 102.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+15 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 6176
+>>
+stream
+0.200025 w
+0. G
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 816.8899999999999864 Td
+(Project 9: SafeStreet - Road Damage Detection and Alert System) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 796.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 783.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 796.8899999999999864 459.9799999999833062 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 783.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 775.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 761.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 775.3899999999999864 459.9799999999833062 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 761.8899999999999864 Td
+(SafeStreet - Road Damage Detection and Alert System) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 742.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 728.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 742.3899999999999864 459.9799999999833062 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 728.8899999999999864 Td
+(GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 720.8899999999999864 55.3000000000000043 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 707.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 720.8899999999999864 459.9799999999833062 -90.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 707.3899999999999864 Td
+(SafeStreet includes a dedicated mobile application for maintenance teams, streamlining road damage) Tj
+T* (detection and reporting. On-field personnel can capture images and upload them directly to the system) Tj
+T* (via the app, which syncs with the backend for analysis. The ViT model processes the uploaded image) Tj
+T* (to classify damage, assess severity, and generate a detailed text summary. This summary highlights) Tj
+T* (the type of damage, severity, and repair priority, which is shared with the relevant admin or authority) Tj
+T* (through an automated email. The MERN-based web platform complements the app by offering) Tj
+T* (advanced visualizations, insights, and historical analysis for road authorities.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 630.3899999999999864 55.3000000000000043 -44.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 616.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 630.3899999999999864 459.9799999999833062 -44.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 616.8899999999999864 Td
+(Mobile App: React Native ,Web App: React.js, HTML, CSS, JavaScript    Backend:Node.js, Express.js) Tj
+T* (  Database: MongoDB ,  Machine Learning Model: Vision Transformer \(ViT\)) Tj
+T* () Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 585.8899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 572.3899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 585.8899999999999864 459.9799999999833062 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 572.3899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+BT
+/F1 14 Tf
+16.0999999999999979 TL
+0. g
+10. 427.8899999999999864 Td
+(Project 10: SceneSolver - A Smart Tool for Crime Scene Investigation) Tj
+ET
+0. G
+0.200025 w
+0. G
+0.200025 w
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+40. 407.8899999999999864 55.3000000000000043 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+45. 394.3899999999999864 Td
+() Tj
+ET
+0.1 0.74 0.61 rg
+0.78 G
+0. w
+0.1 0.74 0.61 rg
+95.3000000000000114 407.8899999999999864 459.9800000000147406 -21.5 re
+f
+BT
+/F2 10 Tf
+11.5 TL
+1. g
+100.3000000000000114 394.3899999999999864 Td
+(Content) Tj
+ET
+0. G
+0.200025 w
+1. g
+0.78 G
+0.1 w
+1. g
+40. 386.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 372.8899999999999864 Td
+(Project) Tj
+T* (Title) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 386.3899999999999864 459.9800000000147406 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 372.8899999999999864 Td
+(SceneSolver - A Smart Tool for Crime Scene Investigation) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 353.3899999999999864 55.3000000000000043 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 339.8899999999999864 Td
+(Category) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 353.3899999999999864 459.9800000000147406 -21.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 339.8899999999999864 Td
+(GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 331.8899999999999864 55.3000000000000043 -67.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 318.3899999999999864 Td
+(Problem) Tj
+T* (Statement) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 331.8899999999999864 459.9800000000147406 -67.5 re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 318.3899999999999864 Td
+(SceneSolver is an AI-powered forensic platform that automates crime scene analysis using CLIP and) Tj
+T* (Vision Transformers \(ViT\). The platform processes images to identify crime types, extract key visual) Tj
+T* (evidence, and generate detailed crime scene summaries. By supporting batch processing,) Tj
+T* (SceneSolver enhances the efficiency of forensic investigations, enabling professionals to analyze) Tj
+T* (large amounts of visual data quickly and accurately.) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 264.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 250.8899999999999864 Td
+(Tech) Tj
+T* (Stack) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 264.3899999999999864 459.9800000000147406 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 250.8899999999999864 Td
+(MERN, GenAI) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+40. 231.3899999999999864 55.3000000000000043 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+45. 217.8899999999999864 Td
+(Max) Tj
+T* (Groups) Tj
+ET
+1. g
+0.78 G
+0.1 w
+1. g
+95.3000000000000114 231.3899999999999864 459.9800000000147406 -33. re
+B
+BT
+/F1 10 Tf
+11.5 TL
+0.314 g
+100.3000000000000114 217.8899999999999864 Td
+(4) Tj
+ET
+0. G
+0.200025 w
+0.78 G
+0. w
+0. G
+0.200025 w
+0. G
+0.200025 w
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R ]
+/Count 7
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+21 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+22 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+23 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+24 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+25 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+26 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+27 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+28 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+29 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+30 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 17 0 R
+/F2 18 0 R
+/F3 19 0 R
+/F4 20 0 R
+/F5 21 0 R
+/F6 22 0 R
+/F7 23 0 R
+/F8 24 0 R
+/F9 25 0 R
+/F10 26 0 R
+/F11 27 0 R
+/F12 28 0 R
+/F13 29 0 R
+/F14 30 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+31 0 obj
+<<
+/Producer (jsPDF 2.5.1)
+/CreationDate (D:20250407114629+05'30')
+>>
+endobj
+32 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 33
+0000000000 65535 f 
+0000039818 00000 n 
+0000041679 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000006187 00000 n 
+0000006324 00000 n 
+0000013409 00000 n 
+0000013546 00000 n 
+0000016953 00000 n 
+0000017091 00000 n 
+0000019721 00000 n 
+0000019860 00000 n 
+0000026341 00000 n 
+0000026480 00000 n 
+0000033450 00000 n 
+0000033589 00000 n 
+0000039914 00000 n 
+0000040040 00000 n 
+0000040171 00000 n 
+0000040305 00000 n 
+0000040443 00000 n 
+0000040567 00000 n 
+0000040696 00000 n 
+0000040828 00000 n 
+0000040964 00000 n 
+0000041092 00000 n 
+0000041219 00000 n 
+0000041348 00000 n 
+0000041481 00000 n 
+0000041583 00000 n 
+0000041932 00000 n 
+0000042018 00000 n 
+trailer
+<<
+/Size 33
+/Root 32 0 R
+/Info 31 0 R
+/ID [ <51B02E2252CD4F41EAB87274DD148276> <51B02E2252CD4F41EAB87274DD148276> ]
+>>
+startxref
+42122
+%%EOF
